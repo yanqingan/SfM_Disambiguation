@@ -29,7 +29,7 @@ Codes of CVPR 2017 paper --- Distinguishing the Indistinguishable: Exploring Str
   publisher={ACM}
 }</code></pre>
 
-<p>For more information, please see my homepage at <a href="https://yanqingan.github.io/" rel="nofollow">https://yanqingan.github.io/</a>. If you have any question, please post it here or send an email to me. Sorry that, I may not respond to you immediately.</p>
+<p>For more information, please see my homepage at <a href="https://yanqingan.github.io/" rel="nofollow">https://yanqingan.github.io/</a>. If you have any question, please post it here or send an email to me. Sorry that, I may not respond to you immediately, but I will reach out (suppose I do not forget), if I have spare time beyond R&D work and kissing my little baby.</p>
 
 <h2>File Instruction</h2>
 <p>There is currently only one folder ("bundler_sfm_disambiguation" which means is based on bundler_sfm method [2]) in the directory, in which contains a "src" folder, a "script" folder and a .zip file.</p>
@@ -41,13 +41,12 @@ Codes of CVPR 2017 paper --- Distinguishing the Indistinguishable: Exploring Str
 <p><b>Folder "script":</b></p>
 <p>"RunBundler_orig.sh" is the original script to run bundler_sfm with full steps of feature selecting, matching and bundler adjustment.</p>
 <p>In "RunBundler_skip.sh", I skip the process of feature selecting and matching (see the annotations at line #98 and #109), if you have already finished the whole bundler pipeline once, as it is so expensive to repeat them everytime.</p>
-<p><b><i>I think it is easy to follow up, but notice that changing them accordingly if you adopt another framework!</i></b></p>
 
 <h2>Parameter Setting</h2>
 <p>The parameters, that I think you have to take note of, are the two in <i>Disambiguate()</i> function, i.e., <i>float converage</i> and <i>float score_thres</i>.</p> 
 <p>The <i>converage</i> controls how many iconic images will be selected. As for small-scale indoor scenes, a large value between 0.7 and 0.9 is recommended; otherwise, for large-scale unstructured datasets, the value around 0.6 would be enough.</p> 
 <p>Parameter <i>score_thres</i> defines whether an image pair is acceptable. As for small-scale scenes, similarly, a large threshold (around 0.3) is recommended; otherwise, for large-scale outdoor scenes, <i>score_thres</i> between 0.04 and 0.1 would be a good choice.</p>
-<p>For instance, for <a href="http://www.cs.unc.edu/~jheinly/duplicate_structure.html" rel="nofollow">Alexander Nevsky Cathedral dataset</a>, we use <i>converage</i> = 0.6 and <i>score_thres</i> = 0.1 to achieve well-registered 3D point clouds.</p>
+<p>For instance, for <a href="http://www.cs.unc.edu/~jheinly/duplicate_structure.html" rel="nofollow">Alexander Nevsky Cathedral</a> dataset, we use <i>converage</i> = 0.6 and <i>score_thres</i> = 0.1 to achieve well-registered 3D point clouds.</p>
 
 <h2>How to Use</h2>
 <p>This code is written in C++ and tested on ubuntu 16.04.</p> 
@@ -64,6 +63,3 @@ $ cd bundler_sfm_disambiguation/
 $ make
 $ cd examples/<b>your_dataset_name/ (cd to the directory where your images are located)</b>
 $ ../../Rundler_orig.sh <b>(or ../../Rundler_skip.sh)</b></code></pre>
-  
-<h2>To Be Continued...</h2>
-<p>I will come back, if I have spare time beyond R&D work and kissing my little baby.</p>
