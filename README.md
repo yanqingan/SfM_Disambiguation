@@ -1,5 +1,5 @@
 # SfM_Disambiguation
-Codes of CVPR 2017 paper --- Distinguishing the Indistinguishable: Exploring Structural Ambiguities via Geodesic Context
+Code for CVPR 2017 paper --- Distinguishing the Indistinguishable: Exploring Structural Ambiguities via Geodesic Context
 
 <h2>About This Work</h2>
 <p>This is written by Qingan Yan (<a href="mailto:yanqingan@whu.edu.cn">yanqingan@whu.edu.cn</a> and <a href="mailto:yanqinganssg@gmail.com">yanqinganssg@gmail.com</a>), based on the Structure-from-Motion Disambiguation work [1] of Qingan Yan, Long Yang, Ling Zhang and Chunxia Xiao, at Wuhan Unversity. It offers a way to distinguish the incorrect feature connections caused by ambiguous image content. The code is licensed under the GNU General Public License.</p>
@@ -37,7 +37,7 @@ Codes of CVPR 2017 paper --- Distinguishing the Indistinguishable: Exploring Str
 <p>1. "Disambiguate.cpp" is the core algorithm implementation file which includes all the steps described in our work [1], where <i>ComputeConstraintTracks()</i> is used to compute long tracks (usually <i>track_degree</i> == 3), and <i>Disambiguate()</i> achieves the disambiguating purpose. They belong to the BundlerApp class.</p>
 <p>2. "BundlerApp.h" is the class declaration file where our <i>ComputeConstraintTracks()</i> function (line #201) and <i>Disambiguate()</i> function (line #204) are declared. I only changed these two places as compared to its original version.</p>
 <p>3. "BundlerGeometry.cpp" shows where to call our functions (lines from #56 to #61 and #90 to #96); use the new track computing function to form tracks and launch disambiguating after that.</p>
-<p>4. "Makefile" indicates how to compile our imported codes; just adding a term (see line #44).</p>
+<p>4. "Makefile" indicates how to compile our imported codes; just add a term "Disambiguate.o"(see line #44).</p>
 <p><b>Folder "script":</b></p>
 <p>"RunBundler_orig.sh" is the original script to run bundler_sfm with full steps of feature selecting, matching and bundler adjustment.</p>
 <p>In "RunBundler_skip.sh", I skip the process of feature selecting and matching (see the annotations at line #98 and #109), if you have already finished the whole bundler pipeline once, as it is so expensive to repeat them everytime.</p>
