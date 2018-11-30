@@ -2,10 +2,10 @@
 Code for CVPR 2017 paper --- Distinguishing the Indistinguishable: Exploring Structural Ambiguities via Geodesic Context
 
 <h2>About This Work</h2>
-<p>This is written by Qingan Yan (<a href="mailto:yanqingan@whu.edu.cn">yanqingan@whu.edu.cn</a> and <a href="mailto:yanqinganssg@gmail.com">yanqinganssg@gmail.com</a>), based on the Structure-from-Motion Disambiguation work [1] of Qingan Yan, Long Yang, Ling Zhang and Chunxia Xiao, at Wuhan Unversity. It offers a way to distinguish the incorrect feature connections caused by ambiguous image content. The code is licensed under the GNU General Public License.</p>
+<p>This is written by Qingan Yan (<a href="mailto:yanqingan@whu.edu.cn">yanqingan@whu.edu.cn</a> and <a href="mailto:yanqinganssg@gmail.com">yanqinganssg@gmail.com</a>), based on the Structure-from-Motion Disambiguation work [1] of Qingan Yan, Long Yang, Ling Zhang, Chunxia Xiao, at Wuhan Unversity. It offers a way to distinguish the incorrect feature connections caused by ambiguous image content. The code is licensed under the GNU General Public License.</p>
 
 <p>As we do not rewrite the incremental Structure-from-Motion process, the proposed method is thus partly based on "bundler_sfm" [2] (or other similar softwares, like <a href="http://ccwu.me/vsfm/" rel="nofollow">VisualSFM</a> and <a href="https://github.com/colmap/colmap" rel="nofollow">COLMAP</a>). If you use it for your research, please cite the following papers in your work:</p>
-<p>[1] Qingan Yan, Long Yang, Ling Zhang and Chunxia Xiao. <i>Distinguishing the Indistinguishable: Exploring Structural Ambiguities via Geodesic Context</i>. CVPR 2017.</p>
+<p>[1] Qingan Yan, Long Yang, Ling Zhang, Chunxia Xiao. <i>Distinguishing the Indistinguishable: Exploring Structural Ambiguities via Geodesic Context</i>. CVPR 2017.</p>
 
 <pre><code>@inproceedings{yan2017distinguishing,
   author={Yan, Qingan and Yang, Long and Zhang, Ling and Xiao, Chunxia},
@@ -16,7 +16,7 @@ Code for CVPR 2017 paper --- Distinguishing the Indistinguishable: Exploring Str
   organization={IEEE}
 }</code></pre>
 
-<p>[2] Noah Snavely, Steven M. Seitz, and Richard Szeliski. <i>Photo Tourism: Exploring Photo Collections in 3D</i>. SIGGRAPH 2006.</p>
+<p>[2] Noah Snavely, Steven M. Seitz, Richard Szeliski. <i>Photo Tourism: Exploring Photo Collections in 3D</i>. SIGGRAPH 2006.</p>
 
 <pre><code>@article{snavely2006photo,
   title={Photo tourism: exploring photo collections in 3D},
@@ -56,10 +56,10 @@ Code for CVPR 2017 paper --- Distinguishing the Indistinguishable: Exploring Str
 </ol>
 <p>More details about bundler_sfm, please follow the manual at <a href="https://github.com/snavely/bundler_sfm" rel="nofollow">https://github.com/snavely/bundler_sfm</a>.</p>
 <p>A simple example:</p>
-<pre><code>$ cd SfM_Disambiguation/
-$ cd bundler_sfm_disambiguation/
-$ unzip bundler_sfm_disambiguation.zip
-$ cd bundler_sfm_disambiguation/
-$ make
-$ cd examples/<b>your_dataset_name/ (cd to the directory where your images are located)</b>
-$ ../../Rundler_orig.sh <b>(or ../../Rundler_skip.sh)</b></code></pre>
+<pre><code>cd SfM_Disambiguation/
+cd bundler_sfm_disambiguation/
+unzip bundler_sfm_disambiguation.zip
+cd bundler_sfm_disambiguation/
+make
+cd examples/<b>your_dataset_name/ (cd to the directory where your images are located)</b>
+../../Rundler_orig.sh <b>(or ../../Rundler_skip.sh)</b></code></pre>
