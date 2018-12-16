@@ -2,9 +2,9 @@
 Code for CVPR 2017 paper --- Distinguishing the Indistinguishable: Exploring Structural Ambiguities via Geodesic Context
 
 <h2>About This Work</h2>
-<p>This repository contains the code for our Structure-from-Motion Disambiguation work [1]. It offers a way to distinguish the incorrect feature connections caused by ambiguous image content. The code is licensed under the GNU General Public License.</p>
-
-<p>As we do not rewrite the incremental Structure-from-Motion process, the proposed method is thus partly based on "bundler_sfm" [2] (or other similar softwares, like <a href="http://ccwu.me/vsfm/" rel="nofollow">VisualSFM</a> and <a href="https://github.com/colmap/colmap" rel="nofollow">COLMAP</a>). If you use it for your research, please cite the following papers in your work:</p>
+<p>This repository contains the code for our Structure-from-Motion Disambiguation work <a href="https://yanqingan.github.io/docs/cvpr17_distinguishing.pdf" rel="nofollow">[1]</a>. It offers a way to distinguish the incorrect feature connections caused by ambiguous image content and recover a unified 3D model.</p>
+  
+<p>I rewrite the code in order to be contribution-independent and easily-accessible using <a href="https://github.com/snavely/bundler_sfm" rel="nofollow">bundler_sfm</a>, which helps to conduct the incremental Structure-from-Motion calculation. For more robust outputs, it is recommended to adopt more recent softwares, like <a href="http://ccwu.me/vsfm/" rel="nofollow">VisualSFM (used in our paper)</a> and <a href="https://github.com/colmap/colmap" rel="nofollow">COLMAP</a>. Accordingly, you may need to do a little bit of revision to the interface module. The code is licensed under the GNU General Public License. If you use it for your research, please cite the following papers in your work:</p>
 <p>[1] Qingan Yan, Long Yang, Ling Zhang, Chunxia Xiao. <i>Distinguishing the Indistinguishable: Exploring Structural Ambiguities via Geodesic Context</i>. CVPR 2017.</p>
 
 <pre><code>@inproceedings{yan2017distinguishing,
@@ -14,19 +14,6 @@ Code for CVPR 2017 paper --- Distinguishing the Indistinguishable: Exploring Str
   pages={3836-3844},
   year={2017},
   organization={IEEE}
-}</code></pre>
-
-<p>[2] Noah Snavely, Steven M. Seitz, Richard Szeliski. <i>Photo Tourism: Exploring Photo Collections in 3D</i>. SIGGRAPH 2006.</p>
-
-<pre><code>@article{snavely2006photo,
-  title={Photo tourism: exploring photo collections in 3D},
-  author={Snavely, Noah and Seitz, Steven M and Szeliski, Richard},
-  journal={ACM Transactions on Graphics (TOG)},
-  volume={25},
-  number={3},
-  pages={835--846},
-  year={2006},
-  publisher={ACM}
 }</code></pre>
 
 <p>For more information, please see my homepage at <a href="https://yanqingan.github.io/" rel="nofollow">https://yanqingan.github.io/</a>. If you have any question, please post it here or send an email to me. Sorry that, I may not respond to you immediately, but I will reach out (suppose I do not forget), if I have spare time beyond R&D work and kissing my little baby.</p>
