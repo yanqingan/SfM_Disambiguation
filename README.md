@@ -50,3 +50,6 @@ cd bundler_sfm_disambiguation/
 make
 cd examples/<b>your_dataset_name/ (cd to the directory where your images are located)</b>
 ../../Rundler_orig.sh <b>(or ../../Rundler_skip.sh)</b></code></pre>
+
+<h2>Datasets</h2>
+<p>With respect to some common requests, it seems that some disambiguation datasets (proposed maybe 5 years ago, such as <a href="https://snsinha.github.io/pdfs/RobertsCVPR2011.pdf" rel="nofollow">Richard Roberts-CVPR11</a> and <a href="http://www.cs.sfu.ca/~pingtan/Papers/cvpr12_sfm.pdf" rel="nofollow">Nianjuan Jiang-CVPR12</a>) are now difficult to acquire. So I uploaded those datasets for easy accessing. Please read the README.md file in "bundler_sfm_disambiguation/datasets" for more information and acknowledgement.</p>
