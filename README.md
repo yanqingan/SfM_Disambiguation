@@ -53,3 +53,5 @@ cd examples/<b>your_dataset_name/ (cd to the directory where your images are loc
 
 <h2>Datasets</h2>
 <p>With respect to some common requests, it seems that some disambiguation datasets (proposed maybe 5 years ago, such as <a href="https://snsinha.github.io/pdfs/RobertsCVPR2011.pdf" rel="nofollow">Richard Roberts-CVPR11</a> and <a href="http://www.cs.sfu.ca/~pingtan/Papers/cvpr12_sfm.pdf" rel="nofollow">Nianjuan Jiang-CVPR12</a>) are now difficult to acquire. So I uploaded those datasets for easy accessing. Please read the README.md file in "bundler_sfm_disambiguation/datasets" for more information and acknowledgement.</p>
+
+<p>As the Temple of Haven dataset is so large, I could not upload it into this repository. However, you can still download it through my <a href="https://drive.google.com/file/d/13HFdD7ivEagRXnEEklrrtMIbPKI-2k97/view?usp=sharing" rel="nofollow">GoogleDrive sharing link</a> or <a href="https://pan.baidu.com/s/1JwxtERICu_091EDjKBoAfA" rel="nofollow">BaiduYun sharing link</a> (if you can not access Google because of Firewall).</p>
